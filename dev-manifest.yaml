@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sean-api
+  name: matt-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sean-api
+      app: matt-api
   template:
     metadata:
       labels:
-        app: sean-api
+        app: matt-api
     spec:
       containers:
-        - name: sean-api
+        - name: matt-api
           # This image is going to be the path to the image you create in a future step
           image: us-docker.pkg.dev/scrum-team-7/matt-api/api-tests
           ports:
